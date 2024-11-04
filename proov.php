@@ -47,7 +47,26 @@ echo "sõnade arv lauses - ".str_word_count($tekst);
 echo "<br>";
 $tekst2='     Põhitoetus võetakse ära 11.11 kui võlgnevused ei ole parandatud';
 echo ltrim($tekst2);
-echo trim($tekst2, "P, t..k");
+echo "<br>";
+echo trim($tekst2, "P, t..t, v");
 //test
+echo "<br>";
+//$tekst3 = 'A woman should soften but not weaken a man';
+//echo trim($tekst3, "A, a, k..n, w");	//oman should soften but not weake
 
 // Iseseisvalt - tekst kui massiiv
+$massiivitekst='Taiendav info opilase kohta';
+echo "<br>";
+// massiiv algab nullist
+echo $massiivitekst;
+echo "<br>";
+echo "1.täht - ".$massiivitekst[0];
+echo "<br>";
+// kolmas sõna
+$sona=str_word_count($massiivitekst, 1);
+print_r($sona); //Array ( [0] => Taiendav [1] => info [2] => opilase [3] => kohta;
+echo "<br>";
+echo "Kolmas sõna - ".$sona[2];
+
+
+
