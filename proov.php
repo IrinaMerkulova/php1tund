@@ -48,6 +48,6 @@ echo "<br>";
 $tekst2='     Põhitoetus võetakse ära 11.11 kui võlgnevused ei ole parandatud';
 echo ltrim($tekst2);
 echo trim($tekst2, "P, t..k");
-//
+//test
 
 // Iseseisvalt - tekst kui massiiv
