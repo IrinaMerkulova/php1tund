@@ -19,13 +19,13 @@ include('nav.php');
     if(isset($_GET["leht"])){
         include('content/'.$_GET["leht"]);
     } else {
-        echo "Tere tulemast!";
+        include('content/kodu.php');
     }
     ?>
 </section>
 <?php
-    echo "Irina Merkulova &copy; ";
-    echo date('Y');
+//jalus
+include('footer.php');
 ?>
 </body>
 </html>
